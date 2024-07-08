@@ -1,0 +1,307 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\migrations\\20240708200311_age.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\migrations\\20240708200311_age.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\controllers\\programcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\controllers\\programcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708184643_emailnull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ExerionAPI\\Migrations\\20240708184643_emailnull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708182702_email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ExerionAPI\\Migrations\\20240708182702_email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\models\\exerciseprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\models\\exerciseprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\models\\programmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\models\\programmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\models\\exeriondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\models\\exeriondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\models\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\models\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\migrations\\20240608145425_program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\migrations\\20240608145425_program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|c:\\users\\an\u0131l\\documents\\exerion\\exerion\\exerionapi\\exerionapi\\migrations\\20240624191006_setsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30193995-5E8D-40A7-A69D-BFEFBA1D73E9}|ExerionAPI\\ExerionAPI.csproj|solutionrelative:exerionapi\\migrations\\20240624191006_setsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240708200311_age.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708200311_age.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Migrations\\20240708200311_age.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708200311_age.cs",
+              "RelativeToolTip": "ExerionAPI\\Migrations\\20240708200311_age.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T20:03:12.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProgramController.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Controllers\\ProgramController.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Controllers\\ProgramController.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Controllers\\ProgramController.cs",
+              "RelativeToolTip": "ExerionAPI\\Controllers\\ProgramController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAADwv1wAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T12:40:16.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ExerionAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\appsettings.json",
+              "RelativeToolTip": "ExerionAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-19T17:07:35.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240624191006_setsupdate.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240624191006_setsupdate.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Migrations\\20240624191006_setsupdate.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240624191006_setsupdate.cs",
+              "RelativeToolTip": "ExerionAPI\\Migrations\\20240624191006_setsupdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:10:06.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ExerionAPI\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAcwIoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T13:08:25.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240708182702_email.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708182702_email.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Migrations\\20240708182702_email.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708182702_email.cs",
+              "RelativeToolTip": "ExerionAPI\\Migrations\\20240708182702_email.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T18:27:02.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\User.cs",
+              "RelativeToolTip": "ExerionAPI\\Models\\User.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwB4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:50:40.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Program.cs",
+              "RelativeToolTip": "ExerionAPI\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvzYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T18:28:44.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240708184643_emailnull.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708184643_emailnull.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Migrations\\20240708184643_emailnull.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240708184643_emailnull.cs",
+              "RelativeToolTip": "ExerionAPI\\Migrations\\20240708184643_emailnull.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T18:46:43.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Services\\EmailService.cs",
+              "RelativeToolTip": "ExerionAPI\\Services\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T18:38:55.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProgramModels.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\ProgramModels.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Models\\ProgramModels.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\ProgramModels.cs",
+              "RelativeToolTip": "ExerionAPI\\Models\\ProgramModels.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T12:41:39.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ExerciseProgram.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\ExerciseProgram.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Models\\ExerciseProgram.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\ExerciseProgram.cs",
+              "RelativeToolTip": "ExerionAPI\\Models\\ExerciseProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T13:58:55.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExerionDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\ExerionDbContext.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Models\\ExerionDbContext.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\ExerionDbContext.cs",
+              "RelativeToolTip": "ExerionAPI\\Models\\ExerionDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:57:20.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240608145425_program.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240608145425_program.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Migrations\\20240608145425_program.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Migrations\\20240608145425_program.cs",
+              "RelativeToolTip": "ExerionAPI\\Migrations\\20240608145425_program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:54:25.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserLoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\UserLoginModel.cs",
+              "RelativeDocumentMoniker": "ExerionAPI\\Models\\UserLoginModel.cs",
+              "ToolTip": "C:\\Users\\An\u0131l\\Documents\\Exerion\\exerion\\ExerionAPI\\ExerionAPI\\Models\\UserLoginModel.cs",
+              "RelativeToolTip": "ExerionAPI\\Models\\UserLoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T13:48:34.862Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

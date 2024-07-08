@@ -1,0 +1,18 @@
+/* styles/programCard.css */
+
+.program-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.program-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.program-card p {
+  margin-top: 8px;
+  font-size: 16px;
+}

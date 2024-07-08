@@ -1,172 +1,304 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { register } from "../store/reducers/auth";
+import axios from "axios";
+import { useNavigate } from "react-router";
 
 function SignUp({ onClose }) {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    birthDate: "",
-    weight: "",
-    height: "",
-    email: "",
-    password: "",
-  });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [birthDate, setBirthDate] = useState("");
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
+  const [age, setAge] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [verificationCode, setVerificationCode] = useState("");
+  const [isVerifying, setIsVerifying] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const fields = [
+      { value: email, message: "Please enter your email." },
+      { value: password, message: "Please enter your password." },
+      { value: firstName, message: "Please enter your first name." },
+      { value: lastName, message: "Please enter your last name." },
+      { value: birthDate, message: "Please enter your birth date." },
+      { value: weight, message: "Please enter your weight." },
+      { value: height, message: "Please enter your height." },
+      { value: age, message: "Please enter your age." },
+    ];
+
+    for (const field of fields) {
+      if (!field.value) {
+        setErrorMessage(field.message);
+        return;
+      }
+    }
+
+    try {
+      // Check if email already exists in the database and verification status
+      const emailCheckResponse = await axios.get(
+        `http://localhost:5176/api/User/checkEmail/${email}`
+      );
+
+      if (
+        emailCheckResponse.data.exists &&
+        emailCheckResponse.data.isVerified
+      ) {
+        setErrorMessage("Email already exists and is verified.");
+        setSuccessMessage("");
+        return;
+      }
+
+      if (
+        emailCheckResponse.data.exists &&
+        !emailCheckResponse.data.isVerified
+      ) {
+        // Email exists but is not verified, resend verification code
+        await axios.post(
+          `http://localhost:5176/api/User/sendVerificationCode`,
+          `"${email}"`,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        setErrorMessage("");
+        setSuccessMessage("Verification code sent again.");
+        setIsVerifying(true);
+        return;
+      }
+    } catch (error) {
+      console.error("Error checking email:", error);
+      setErrorMessage("An error occurred while checking email.");
+      return;
+    }
+
+    dispatch(
+      register({
+        email,
+        password,
+        firstName,
+        lastName,
+        birthDate,
+        height,
+        weight,
+        age,
+      })
+    ).then((action) => {
+      localStorage.setItem("accessToken", action.payload.token);
+      localStorage.setItem("userEmail", email);
+
+      axios
+        .post(
+          "http://localhost:5176/api/User/sendVerificationCode",
+          `"${email}"`,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then(() => {
+          setIsVerifying(true);
+          setSuccessMessage("Verification code sent to your email.");
+          setErrorMessage("");
+        })
+        .catch((error) => {
+          console.error("Error sending verification code:", error);
+          setErrorMessage("An error occurred while sending verification code.");
+        });
+    });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // SignUp işlemleri burada yapılabilir
-    console.log("Form Data:", formData);
-    // Formu sıfırla
-    setFormData({
-      firstName: "",
-      lastName: "",
-      birthDate: "",
-      weight: "",
-      height: "",
-      email: "",
-      password: "",
-    });
+  const handleVerifyCode = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "http://localhost:5176/api/User/verifyCode",
+        { email, code: verificationCode }
+      );
+
+      localStorage.setItem("accessToken", response.data.token);
+      setSuccessMessage("Verification successful!");
+      setErrorMessage("");
+      navigate("/dashboard");
+    } catch (error) {
+      console.error("Error verifying code:", error);
+      setErrorMessage("Invalid verification code.");
+    }
   };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
       <div className="bg-white rounded-lg p-8 max-w-md relative shadow-lg">
         <button
-          className="button absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+          className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
           onClick={onClose}
         >
           X
         </button>
-        <h2 className="text-3xl font-semibold text-gray-800 mb-4">Sign Up</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label
-                htmlFor="firstName"
-                className="block text-gray-800 font-medium mb-2"
+        {!isVerifying ? (
+          <>
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+              Sign Up
+            </h2>
+            {errorMessage && (
+              <div className="text-red-500 mb-4">{errorMessage}</div>
+            )}
+            {successMessage && (
+              <div className="text-green-500 mb-4">{successMessage}</div>
+            )}
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="email">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="password">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="firstName">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="lastName">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  id="lastName"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="birthDate">
+                  Birth Date
+                </label>
+                <input
+                  type="date"
+                  id="birthDate"
+                  value={birthDate}
+                  onChange={(e) => setBirthDate(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="age">
+                  Age
+                </label>
+                <input
+                  type="text"
+                  id="age"
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="weight">
+                  Weight
+                </label>
+                <input
+                  type="text"
+                  id="weight"
+                  value={weight}
+                  onChange={(e) => setWeight(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2" htmlFor="height">
+                  Height
+                </label>
+                <input
+                  type="text"
+                  id="height"
+                  value={height}
+                  onChange={(e) => setHeight(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
               >
-                First Name
-              </label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.firstName}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="lastName"
-                className="block text-gray-800 font-medium mb-2"
+                Sign Up
+              </button>
+            </form>
+          </>
+        ) : (
+          <>
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+              Verify Your Email
+            </h2>
+            {errorMessage && (
+              <div className="text-red-500 mb-4">{errorMessage}</div>
+            )}
+            {successMessage && (
+              <div className="text-green-500 mb-4">{successMessage}</div>
+            )}
+            <form onSubmit={handleVerifyCode}>
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 mb-2"
+                  htmlFor="verificationCode"
+                >
+                  Verification Code
+                </label>
+                <input
+                  type="text"
+                  id="verificationCode"
+                  value={verificationCode}
+                  onChange={(e) => setVerificationCode(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
               >
-                Last Name
-              </label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="birthDate"
-                className="block text-gray-800 font-medium mb-2"
-              >
-                Birth Date
-              </label>
-              <input
-                type="date"
-                id="birthDate"
-                name="birthDate"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.birthDate}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="weight"
-                className="block text-gray-800 font-medium mb-2"
-              >
-                Weight
-              </label>
-              <input
-                type="number"
-                id="weight"
-                name="weight"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.weight}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="height"
-                className="block text-gray-800 font-medium mb-2"
-              >
-                Height
-              </label>
-              <input
-                type="number"
-                id="height"
-                name="height"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.height}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-gray-800 font-medium mb-2"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="password"
-                className="block text-gray-800 font-medium mb-2"
-              >
-                Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                className="border-2 border-gray-400 rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
-                value={formData.password}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <button
-            type="submit"
-            className="button absolute bottom-4 right-4 text-gray-600 hover:text-gray-900"
-          >
-            Sign Up
-          </button>
-        </form>
+                Verify
+              </button>
+            </form>
+          </>
+        )}
       </div>
     </div>
   );

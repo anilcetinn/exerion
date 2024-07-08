@@ -1,0 +1,47 @@
+.list--header {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.list--header h2 {
+  color: #526d82;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.list--container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.list h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.list {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+}
+
+.training--detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #526d82;
+  justify-content: space-between;
+}
+
+.bidumbell {
+  width: 80px;
+  height: 50px;
+  background: #dde6ed;
+}
+
+.list:hover {
+  background: #dde6ed;
+  border-radius: 10px;
+}

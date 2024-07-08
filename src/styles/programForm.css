@@ -1,0 +1,64 @@
+/* programForm.css */
+
+.program-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-parts button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.body-parts button:hover {
+  background-color: #e0e0e0;
+}
+
+.exercises {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.exercise-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.save-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-white {
+  overflow-y: auto;
+  max-height: calc(
+    100vh - 100px
+  ); /* ekran yüksekliğine göre ayarlanmış max yükseklik */
+}
+
+.search-bar input {
+  width: calc(100% - 78px);
+}

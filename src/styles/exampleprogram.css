@@ -1,0 +1,51 @@
+/* exampleprogram.css */
+
+.exercise-table {
+  display: flex;
+  flex-wrap: wrap; /* Tabloları yanyana sıralamak ve bir satırı doldurduktan sonra alt satıra geçmesini sağlamak için flex-wrap kullanıyoruz */
+  justify-content: center; /* Tabloları ortalamak için */
+}
+
+.exercise-group {
+  flex: 1 0 300px; /* Esnek bir genişlik tanımlıyoruz: 1 (flex-grow), 0 (flex-shrink), 300px (flex-basis) */
+  margin: 10px; /* Tablolar arası boşluk */
+  min-width: 280px; /* Minimum genişlik belirliyoruz */
+  max-width: 100%; /* Maksimum genişlik belirliyoruz */
+}
+
+.body-part-title {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.exercise-list {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.exercise-list th,
+.exercise-list td {
+  padding: 10px;
+  text-align: left;
+}
+
+.exercise-list th {
+  background-color: #f2f2f2;
+}
+
+.exercise-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exercise-list tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.exercise-image {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

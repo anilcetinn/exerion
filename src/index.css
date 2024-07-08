@@ -1,14 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 body {
-  margin: 0;
-  font-family: "Roboto";
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  background: #dde6ed;
 }
 
 .button {
@@ -62,19 +60,6 @@ code {
   white-space: nowrap;
 }
 
-.item {
-  display: inline-block;
-  min-width: 200px; /* Öğe genişliğini ayarlayın */
-  height: 100px; /* Öğe yüksekliğini ayarlayın */
-  margin-right: 20px; /* Öğeler arası boşluğu ayarlayın */
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  padding: 20px;
-  font-size: 18px;
-  line-height: 1.5;
-  vertical-align: top;
-}
-
 /* Kaydırma çubuğu stilleri */
 .scrollbar-container::-webkit-scrollbar {
   height: 8px;
@@ -106,13 +91,13 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ff2625;
+
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
   bottom: -20px;
   right: 80px;
-  transform: scale(1, 1);
+  transform: scale(0.5, 0.5);
   transition: 0.3s all ease-in-out;
 }
 
@@ -144,81 +129,98 @@ code {
   height: 900px;
   margin-top: -330px;
 }
-
-.exercise-card {
-  width: 400px;
-  height: 445px;
-  background: #fff;
-  border-top: 4px solid #ff2625;
-  border-bottom-left-radius: 20px;
-  text-decoration: none;
+#main-header {
+  margin: 1.5rem 0 0; /* Yukarıdan boşluk bırakmak için margin-top ayarla */
+  padding: 2rem 15%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  padding-bottom: 10px;
-  transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  align-items: flex-start; /* Yatay hizalama */
+  height: max-content;
 }
 
-.exercise-card img {
-  height: 326px;
-}
-
-.bodyPart-card {
-  transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
-}
-
-.exercise-card:hover,
-.bodyPart-card:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.search-btn:hover {
-  color: #ff2625 !important;
-  border: 1px solid #ff2625 !important;
-}
-
-.exercise-video {
+#main-header {
+  margin: 1.5rem 0 0; /* Yukarıdan boşluk bırakmak için margin-top ayarla */
+  padding: 2rem 15%;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 387px;
-  height: 381px;
-  text-decoration: none;
+  justify-content: space-between;
+  align-items: flex-start; /* Yatay hizalama */
+  height: max-content;
 }
 
-@media screen and (max-width: 1200px) {
-  .detail-image {
-    width: 300px;
-    height: 300px;
-  }
-
-  .react-horizontal-scrolling-menu--scroll-container {
-    width: 500px;
-  }
-
-  .left-arrow,
-  .right-arrow {
-    position: static !important;
-  }
-
-  .hero-banner-img {
-    display: none;
-  }
-
-  .exercise-card {
-    width: 320px;
-  }
-
-  .exercise-video {
-    width: 320px;
-    height: 300px;
-  }
+#main-header-loading {
+  margin-bottom: 3rem;
+  text-align: center;
+  accent-color: #e30d7c;
 }
 
-@media screen and (max-width: 400px) {
-  .exercise-card {
-    width: 280px;
-  }
+#header-title {
+  margin-top: -1rem; /* Yukarıya doğru kaydırma */
+}
+
+#header-title h1 {
+  font-size: 3rem !important; /* Önemli: Diğer CSS kurallarını geçersiz kılmak için */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Örnek bir font ailesi */
+  font-weight: 600; /* Kalınlık */
+  letter-spacing: 0.5px; /* Harfler arası boşluk */
+  padding-left: 0.5rem; /* Sol boşluk */
+}
+
+#header-title img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.26));
+}
+
+#grad1 {
+  height: 200px;
+  background-color: rgb(
+    89,
+    89,
+    89
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(gray, white);
+}
+
+#header-title h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+#main-header nav {
+  display: flex;
+  gap: 1rem;
+}
+.content-section {
+  margin: 3rem 0 6rem 0;
+  padding: 0 15%;
+}
+
+#overview-section {
+  margin: -9rem 0 9rem 0;
+  padding: 8rem 15%;
+  color: #222c31;
+  text-align: center;
+
+  background-size: cover; /* Resmi ekran boyutuna sığacak şekilde ölçekle */
+  background-position: center center; /* Resmi dikey ve yatay olarak ortala */
+}
+
+#overview-section h2 {
+  font-size: 2.5rem;
+  margin: 2rem auto;
+  color: #1d161a;
+}
+
+#overview-section h2 strong {
+  color: #e30d7c;
+}
+
+#overview-section p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
 }

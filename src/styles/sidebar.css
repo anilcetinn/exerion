@@ -1,0 +1,85 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  height: 94vh;
+}
+
+.exerion {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px;
+  color: #27374d;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.logo .icon {
+  font-size: 1;
+}
+
+.menu--list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu--list .item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  color: #27374d;
+}
+
+.menu--list .item:hover,
+.active {
+  background: #27374d;
+  color: #dde6ed !important;
+}
+
+.program-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.body-parts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-parts button {
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.exercises {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exercise-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.exercise-card img {
+  width: 100%;
+  height: auto;
+}
